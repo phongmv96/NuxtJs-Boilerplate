@@ -2,5 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  modules: ['@nuxtjs/eslint-module']
+  tailwindcss: {
+    cssPath: '~/src/assets/css/tailwind.css'
+  },
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss']
 })
