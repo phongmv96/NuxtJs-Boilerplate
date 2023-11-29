@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     { path: '~/components', pathPrefix: false },
     { path: '~/components/lq', pathPrefix: false },
     { path: '~/components/layout', pathPrefix: false },
-    { path: '~/components/chapter', pathPrefix: false }
+    { path: '~/components/chapter.ts', pathPrefix: false }
   ],
   imports: {
     dirs: ['composables/**']

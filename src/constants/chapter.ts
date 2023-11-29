@@ -1,0 +1,3 @@
+export enum CHAPTER_STATUS {}
+// DONE = 'DONE',
+// PROCESSING = 'PROCESSING'
