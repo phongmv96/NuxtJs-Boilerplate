@@ -3,5 +3,6 @@
   <ComponentA />
   <LqButton />
   <LqSelect />
+  <ChapterFilter />
 </template>
 <script setup lang="ts"></script>
