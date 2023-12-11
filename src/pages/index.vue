@@ -11,6 +11,7 @@
   <LqInput />
   <hr />
   <LqLocale />
-  <p>{{ $t('usage') }}</p>
+  <h1>{{ $t('usage') }}</h1>
+  <hr />
 </template>
 <script lang="ts" setup></script>

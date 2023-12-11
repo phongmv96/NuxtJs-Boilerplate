@@ -5,9 +5,9 @@ const { locale } = useI18n()
   <div>
     <form>
       <select v-model="locale">
-        <option value="en">en</option>
-        <option value="vi">vi</option>
-        <option value="ko">ko</option>
+        <option value="en">English</option>
+        <option value="vi">Vietnamese</option>
+        <option value="ko">Korean</option>
       </select>
     </form>
   </div>
