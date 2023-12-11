@@ -6,5 +6,6 @@ export default defineI18nConfig(() => ({
   legacy: false,
   locale: 'en',
   globalInjection: true,
+  langImports: true,
   messages: { vi, en, ko }
 }))
