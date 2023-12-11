@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import noDataImage from '~/assets/icons/noData.png'
+import NoDataImage from 'assets/icons/NoData.png'
 </script>
 
 <template>
   <div class="chapter-filter">
     Chapter filter
-    <img :src="noDataImage" alt="nodata" />
+    <img :src="NoDataImage" alt="nodata" />
   </div>
 </template>
 

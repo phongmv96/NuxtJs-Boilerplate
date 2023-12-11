@@ -3,6 +3,14 @@
   <ComponentA />
   <LqButton />
   <LqSelect />
-  <ChapterFilter />
+  <LqButton />
+  <LqSelect />
+  <LqButton />
+  <LqButton />
+  <ComponentA />
+  <LqInput />
+  <hr />
+  <LqLocale />
+  <p>{{ $t('usage') }}</p>
 </template>
-<script setup lang="ts"></script>
+<script lang="ts" setup></script>

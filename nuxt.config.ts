@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   css: ['~/assets/css/tailwind.css', '~/assets/css/main.css'],
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
   components: [
     { path: '~/components', pathPrefix: false },
     { path: '~/components/lq', pathPrefix: false },
@@ -12,5 +12,8 @@ export default defineNuxtConfig({
   ],
   imports: {
     dirs: ['composables/**']
+  },
+  i18n: {
+    vueI18n: './i18n.config.ts'
   }
 })
