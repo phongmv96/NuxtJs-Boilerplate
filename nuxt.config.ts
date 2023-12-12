@@ -3,7 +3,17 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
   css: ['~/assets/css/tailwind.css', '~/assets/css/main.css'],
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
+  modules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/i18n',
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore', 'acceptHMRUpdate']
+      }
+    ]
+  ],
   components: [
     { path: '~/components', pathPrefix: false },
     { path: '~/components/lq', pathPrefix: false },
@@ -11,9 +21,12 @@ export default defineNuxtConfig({
     { path: '~/components/chapter.ts', pathPrefix: false }
   ],
   imports: {
-    dirs: ['~/composables/**']
+    dirs: ['~/composables/**', 'stores']
   },
   i18n: {
     vueI18n: './i18n.config.ts'
+  },
+  pinia: {
+    storesDirs: ['./stores/**']
   }
 })

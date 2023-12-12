@@ -1,3 +1,3 @@
 <template>
-  <div class="user-detail">{{ $router.currentRoute }}</div>
+  <div class="user-detail">user Id</div>
 </template>
