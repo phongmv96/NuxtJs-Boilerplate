@@ -1,6 +1,10 @@
-import axios from 'axios'
+import axios, {
+  type AxiosInstance,
+  type AxiosRequestConfig,
+  type AxiosResponse
+} from 'axios'
 
-const axiosClient = axios.create({
+const axiosClient: AxiosInstance = axios.create({
   baseURL: 'http://localhost:3000',
   headers: {
     'Content-Type': 'application/json'
@@ -8,7 +12,7 @@ const axiosClient = axios.create({
 })
 // Add a request interceptor
 axiosClient.interceptors.request.use(
-  function (config) {
+  function (config: AxiosRequestConfig) {
     // Do something before request is sent
     return config
   },
@@ -20,7 +24,7 @@ axiosClient.interceptors.request.use(
 
 // Add a response interceptor
 axiosClient.interceptors.response.use(
-  function (response) {
+  function (response: AxiosResponse) {
     // Any status code that lie within the range of 2xx cause this function to trigger
     // Do something with response data
     return response.data
