@@ -1,8 +1,4 @@
-import axios, {
-  type AxiosInstance,
-  type AxiosRequestConfig,
-  type AxiosResponse
-} from 'axios'
+import axios, { type AxiosInstance, type AxiosResponse } from 'axios'
 
 const axiosClient: AxiosInstance = axios.create({
   baseURL: 'http://localhost:3000',
@@ -11,16 +7,16 @@ const axiosClient: AxiosInstance = axios.create({
   }
 })
 // Add a request interceptor
-axiosClient.interceptors.request.use(
-  function (config: AxiosRequestConfig) {
-    // Do something before request is sent
-    return config
-  },
-  function (error) {
-    // Do something with request error
-    return Promise.reject(error)
-  }
-)
+// axiosClient.interceptors.request.use(
+//   function (config: AxiosRequestConfig) {
+//   // Do something before request is sent
+//     return config
+//   },
+//   function (error) {
+//   // Do something with request error
+//     return Promise.reject(error)
+//   }
+// )
 
 // Add a response interceptor
 axiosClient.interceptors.response.use(
